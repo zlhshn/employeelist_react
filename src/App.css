@@ -1,38 +1,75 @@
-.App {
+body{
+background-color: rgb(178, 247, 224);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h2{
+
+  font-size: 1.5rem;
+  color: rgb(158, 231, 207);
+ 
+}
+.container{
+margin: 2rem auto;
+width: 450px;
+background-color: white;
+text-align: center;
+padding: 1rem;
+}
+
+
+
+.size{
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: rgb(20, 20, 20);
+}
+
+.person-container{
+
+  text-align: left;
+  margin-left: 2rem;
+ display: flex;
+ flex-direction: column;
+ gap: 1.2rem;
+
+}
+
+.person{
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.person img{
+
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.info{
+
+  font-size: .8rem;
+  color: gray;
+}
+
+.info h3{
+ color: rgb(24, 22, 22);
+ font-weight: 600;
+}
+
+.btns{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  background-color:rgb(104, 250, 201) ;
+  border: none;
+  margin-right: 2rem;
+  padding: .6rem  2rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
