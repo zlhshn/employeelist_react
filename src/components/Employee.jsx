@@ -14,13 +14,13 @@ const Employee = () => {
 
   const handleNext = () => {
     const totalPages = Math.ceil(data.length / size);
-    setCurrentpage((prevPage) => Math.min(prevPage + 1, totalPages));
+    setCurrentpage((prevPage) => (prevPage % totalPages) + 1);
   };
 
   return (
     <>
       <p className="size">
-        (Employees {startİndex + 1} to {Math.min(endİndex, data.length)})
+        ( Employees  {startİndex + 1} to {Math.min(endİndex, data.length)} )
       </p>
       <div className="person-container">
         {displayData.map(({ id, name, age, image, email }) => (

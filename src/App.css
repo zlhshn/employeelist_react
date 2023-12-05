@@ -1,5 +1,5 @@
 body{
-background-color: rgb(178, 247, 224);
+background-color: rgb(187, 243, 224);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -11,7 +11,7 @@ h2{
  
 }
 .container{
-margin: 2rem auto;
+margin: 3rem auto;
 width: 450px;
 background-color: white;
 text-align: center;
@@ -39,6 +39,7 @@ padding: 1rem;
 .person{
 
   display: flex;
+ 
   gap: 2rem;
   align-items: center;
 }
@@ -73,3 +74,32 @@ button{
 
 }
 
+@media screen and (max-width:450px) {
+  .container{
+    width: 300px;
+  }
+
+  .person{
+    gap: 1rem;
+  }
+  
+}
+
+@media screen and (max-width:300px) {
+  .container{
+    width: 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .person{
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-wrap: row;
+  
+  
+  }
+ 
+
+}
