@@ -2,15 +2,15 @@ import { useState } from "react";
 import data from "../data";
 
 const Employee = () => {
-  const [index,setIndex] = useState(0)
+  const [index,setIndex] = useState(0);
   const displayData = data.slice(index,index+5);
 
   const handlePrev = () => {
-    setIndex(data.length - Math.abs(index-5)
+    setIndex((index - 5 + data.length) % data.length);
   };
 
   const handleNext = () => {
-   setIndex((index+5)%data.length)
+   setIndex((index+5) % data.length);
   };
 
   return (
