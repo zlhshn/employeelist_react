@@ -16,7 +16,7 @@ const Employee = () => {
   return (
     <>
       <p className="size">
-        ( Employees  {index+1} to {index+5}) )
+        ( Employees  {index+1} to {index+5} )
       </p>
       <div className="person-container">
         {displayData.map(({ id, name, age, image, email }) => (
